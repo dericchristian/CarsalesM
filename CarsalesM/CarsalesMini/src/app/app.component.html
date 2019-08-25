@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <h1>Car Sales Form</h1>
+  <form (ngSubmit) ="onSubmit()">
+
+    <div class="form-group">
+      <label for="carMake">Car Make</label>
+      <input id="carMake" ngModel name="carMake" #carMake="ngModel"  type="text" class="form-control"
+             [(ngModel)]="userModel.carMake" />
+    </div>
+
+    <div class="form-group">
+      <label>Car Model</label>
+      <input id="carModel" ngModel name="carModel" #carModel="ngModel"  type="text" class="form-control"
+             [(ngModel)]="userModel.carModel" />
+    </div>
+
+    <div class="form-group">
+      <label>Engine</label>
+      <input id="carEngine" ngModel name="carEngine" #carEngine="ngModel"  type="text" class="form-control"
+             [(ngModel)]="userModel.carEngine" />
+    </div>
+  <button id="submitBtn" type="submit" class="btn btn-primary">Submit</button>
+
+  </form>
+</div>
+
